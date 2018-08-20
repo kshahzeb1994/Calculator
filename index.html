@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Zoho Price Calculator </title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href= "styles/bootstrap.css"/>
+        <link rel = "stylesheet" type = "text/css" href= "styles/calculator.css"/>
+        <script type="text/javascript" src = "scripts/jquery-3.2.1.min.js"> </script>
+        <script type="text/javascript" src = "scripts/bootstrap.js"> </script>
+        <script type="text/javascript" src = "scripts/calculator.js"> </script>
+
+    </head>
+
+    <body>
+        <div id = "entire_container">
+
+            <!-- title of page -->
+            <div id = "calculator_title">
+                <h1 class = "text-center" id = "zoho_title"> Zoho Price Calculator </h1>
+            </div>
+
+            <!-- container to hold calculator components-->
+            <div id = "calculator_container">
+
+                <!-- left side of calcualtor-->
+                <div id = "competitor_container">
+
+                    <!-- title of container-->
+                    <h1 class = "text-center"> Competitors </h1>
+
+                    <!-- categories for calculator-->
+                    <div class = "categories">
+                        <p> Category</p>
+                        <p> Application</p>
+                        <p> Price Plan</p>
+                        <p> # of Employees</p>
+                        <p> Monthly Cost</p>
+                    </div>
+
+                    <!-- dropdown buttons -->
+
+                    <!-- categories button-->
+                    <div class = "dropdown_buttons">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle dropdown_button" type="button" data-toggle="dropdown"> 
+                                Category
+                            <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li onclick = "selectChoice"><a href="#">CRM</a></li>
+                                    <li onclick = "selectChoice"><a href="#">Online Forms</a></li>
+                                    <li><a href="#">Digital Signature</a></li>
+                                    <li><a href="#">Social Media Management</a></li>
+                                    <li><a href="#">Website Engagement Monitoring</a></li>
+                                    <li><a href="#">Survey</a></li>
+                                    <li><a href="#">Email Marketing</a></li>
+                                    <li><a href="#">Website Builder</a></li>
+                                    <li><a href="#">Website Optimization</a></li>
+                                    <li><a href="#">Accounting Software</a></li>
+                                    <li><a href="#">Inventory Management</a></li>
+                                    <li><a href="#">Invoicing Management </a></li>
+                                    <li onclick = "selectChoice()"> <a href = ""> Invoicing Software </a> </li>
+                                </ul>
+                        </div> <!-- end of dropdown button -->
+
+                        <!-- application list button -->
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle dropdown_button" type="button" data-toggle="dropdown"> 
+                                Application
+                            <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Applications</a></li>
+                                </ul>
+                        </div> <!-- end of dropdown button -->
+
+                        <!-- price plan list -->
+                        <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle dropdown_button" type="button" data-toggle="dropdown"> 
+                                   Price Plan
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Price Plans</a></li>
+                                </ul>
+                        </div> <!-- end of dropdown button -->
+
+                        <!-- user inputs number of employees-->
+                        <input type="text" class="form-control input_field" >
+
+                        <!--field that calcualtes total cost based on previous dropdown button selections -->
+                        <input type="text" class="form-control input_field total_cost" >
+
+                    </div> <!-- end of dropdown buttons container-->
+                </div>
+
+                <!-- vertical line separating left and right side of calculator -->
+                <div class="vl"></div>
+
+                <!-- right side of container -->
+                <div id = "zoho_container">
+                    <h1 class = "text-center"> Zoho </h1>
+
+                    <div class = "categories">
+                        <p> Category</p>
+                        <p> Application</p>
+                        <p> Price Plan</p>
+                        <p> # of Employees</p>
+                        <p> Monthly Cost</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>

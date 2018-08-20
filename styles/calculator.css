@@ -1,0 +1,64 @@
+#entire_container{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#calculator_title{
+    margin-top: 30px;
+}
+
+#zoho_title{
+    text-decoration: underline;
+}
+
+#calculator_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 1000px;
+}
+
+#competitor_container{
+    width: 60%;
+}
+
+#zoho_container{
+    width: 60%;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.vl{
+    border-left: 1px solid black;
+    height: 100vh;
+}
+
+.dropdown{
+    width: 10%;
+    margin-right: 20px;
+}
+
+.dropdown_button{
+    cursor: pointer;
+}
+
+.dropdown_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input_field{
+    width: 80px;
+}
+
+.total_cost{
+    
+}
