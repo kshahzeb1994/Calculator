@@ -1,3 +1,3 @@
 # Calculator
 
-[Main Page:](https://kshahzeb1994.github.io/Calculator/)
+[Main Page](https://kshahzeb1994.github.io/Calculator/)
